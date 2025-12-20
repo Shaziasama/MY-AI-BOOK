@@ -13,13 +13,13 @@ const config: Config = {
   url: 'https://Shaziasama.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/AI-book-with-rag-chatbot/',
+  baseUrl: '/Physical-book-and-rag-chatbot/',
   trailingSlash: false, // Added to address Docusaurus warning
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Shaziasama', // Usually your GitHub org/user name.
-  projectName: 'AI-book-with-rag-chatbot', // Usually your repo name.
+  projectName: 'Physical-book-and-rag-chatbot', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Deploy to this branch
 
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Shaziasama/AI-book-with-rag-chatbot/tree/main/', // Updated editUrl
+            'https://github.com/Shaziasama/Physical-book-and-rag-chatbot/tree/main/', // Updated editUrl
         },
         // blog: {
         //   showReadingTime: true,
