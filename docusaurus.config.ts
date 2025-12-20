@@ -102,23 +102,23 @@ const config: Config = {
           items: [
             {
               label: 'Book',
-              to: '/docs/intro',
+              to: '/intro',
             },
             {
               label: 'Digital Twin',
-              to: '/docs/digital-twin/gazebo-simulation',
+              to: '/digital-twin/gazebo-simulation',
             },
             {
               label: 'Isaac',
-              to: '/docs/isaac/isaac-sim-overview',
+              to: '/isaac/isaac-sim-overview',
             },
             {
               label: 'ROS 2',
-              to: '/docs/ros2/ros2-introduction',
+              to: '/ros2/ros2-introduction',
             },
             {
               label: 'VLA',
-              to: '/docs/vla/introduction-to-vla',
+              to: '/vla/introduction-to-vla',
             },
           ],
         },
