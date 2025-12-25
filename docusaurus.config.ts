@@ -106,19 +106,19 @@ const config: Config = {
             },
             {
               label: 'Digital Twin',
-              to: '/digital-twin/gazebo-simulation',
+              to: '/digital-twin/current/gazebo-simulation',
             },
             {
               label: 'Isaac',
-              to: '/isaac/isaac-sim-overview',
+              to: '/isaac/current/isaac-sim-overview',
             },
             {
               label: 'ROS 2',
-              to: '/ros2/ros2-introduction',
+              to: '/ros2/current/ros2-introduction',
             },
             {
               label: 'VLA',
-              to: '/vla/introduction-to-vla',
+              to: '/vla/current/introduction-to-vla',
             },
           ],
         },

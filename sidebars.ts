@@ -52,6 +52,11 @@ const sidebars: SidebarsConfig = {
       },
       items: [],
     },
+    {
+      type: 'category',
+      label: 'Test Page',
+      items: ['test'],
+    },
   ],
 };
 

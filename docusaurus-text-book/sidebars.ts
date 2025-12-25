@@ -1,55 +1,101 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 const sidebars: SidebarsConfig = {
-  // Manually define the sidebar for the textbook
-  tutorialSidebar: [
-    'intro',
+  bookSidebar: [
+    {
+      type: 'doc',
+      id: 'intro',
+      label: 'Introduction',
+    },
     {
       type: 'category',
-      label: 'Chapter 1: The Robotic Nervous System',
+      label: 'Modules',
       items: [
-        'chapter1/ros2-introduction',
-        'chapter1/python-agents-and-ros',
-        'chapter1/describing-your-robot-urdf',
+        'modules/module1',
+        'modules/module2',
+        'modules/module3',
+        'modules/module4',
       ],
     },
     {
       type: 'category',
-      label: 'Chapter 2: The Digital Twin',
+      label: 'ROS 2',
       items: [
-        'chapter2/physics-simulation',
-        'chapter2/human-robot-interaction',
-        'chapter2/sensors',
+        'ros2/ros2-introduction',
+        'ros2/ros2-nodes-and-topics',
+        'ros2/ros2-actions-and-services',
+        'ros2/ros2-exercises',
       ],
     },
     {
       type: 'category',
-      label: 'Chapter 3: The AI-Robot Brain',
+      label: 'Digital Twin',
       items: [
-        'chapter3/photorealistic-simulation',
-        'chapter3/synthetic-data',
-        'chapter3/isaac-ros-vslam',
-        'chapter3/nav2-planning',
+        'digital-twin/gazebo-simulation',
+        'digital-twin/unity-integration',
+        'digital-twin/digital-twin-exercises',
       ],
     },
     {
       type: 'category',
-      label: 'Chapter 4: Vision-Language-Action',
+      label: 'NVIDIA Isaac',
       items: [
-        'chapter4/voice-to-action',
-        'chapter4/llm-cognitive-planning',
-        'chapter4/capstone-autonomous-humanoid',
+        'isaac/isaac-sim-overview',
+        'isaac/isaac-robotics-manipulation',
+        'isaac/isaac-exercises',
       ],
+    },
+    {
+      type: 'category',
+      label: 'VLA (Vision-Language-Action)',
+      items: [
+        'vla/introduction-to-vla',
+        'vla/vla-models-and-applications',
+        'vla/vla-exercises',
+      ],
+    },
+    {
+      type: 'doc',
+      id: 'capstone-project',
+      label: 'Capstone Project',
+    },
+    {
+      type: 'doc',
+      id: 'additional-resources',
+      label: 'Additional Resources',
+    },
+    // Other miscellaneous docs, I will put them under a general category.
+    {
+      type: 'category',
+      label: 'Technical',
+      items: [
+        'technical/chatbot-integration',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Tutorial Basics',
+      items: [
+        'tutorial-basics/congratulations',
+        'tutorial-basics/create-a-blog-post',
+        'tutorial-basics/create-a-document',
+        'tutorial-basics/create-a-page',
+        'tutorial-basics/deploy-your-site',
+        'tutorial-basics/markdown-features',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Tutorial Extras',
+      items: [
+        'tutorial-extras/manage-docs-versions',
+        'tutorial-extras/translate-your-site',
+      ],
+    },
+    {
+      type: 'doc',
+      id: 'test',
+      label: 'Test Page',
     },
   ],
 };

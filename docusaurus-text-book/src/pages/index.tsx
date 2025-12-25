@@ -4,76 +4,25 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import BookCards from '@site/src/components/BookCards'; // Import BookCards component
+import Footer from '@site/src/components/Footer'; // Import Footer component
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
-      <div className={styles.heroImageContainer}>
-        <img src="/img/hero.jpg" alt="Physical AI & Humanoid Robotics" className={styles.heroImage} />
-      </div>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={styles.readButton}
             to="/docs/intro">
             Start Reading 📖
           </Link>
         </div>
       </div>
     </header>
-  );
-}
-
-const modules = [
-  {
-    title: 'Module 1: Foundations of Physical AI',
-    imageUrl: '/img/module1.jpg', // Placeholder image
-    description: 'Explore the core concepts of physical AI, including robotics, control systems, and sensor integration.',
-    link: '/docs/modules/module1', // Assuming this path exists
-  },
-  {
-    title: 'Module 2: Humanoid Robotics Architectures',
-    imageUrl: '/img/module2.jpg', // Placeholder image
-    description: 'Dive into the design and functional aspects of humanoid robots, covering kinematics, dynamics, and actuation.',
-    link: '/docs/modules/module2', // Assuming this path exists
-  },
-  {
-    title: 'Module 3: Learning and Adaptation in Robots',
-    imageUrl: '/img/module3.jpg', // Placeholder image
-    description: 'Understand how robots learn from their environment and adapt their behaviors using advanced AI techniques.',
-    link: '/docs/modules/module3', // Assuming this path exists
-  },
-  {
-    title: 'Module 4: Ethical and Societal Implications',
-    imageUrl: '/img/module4.jpg', // Placeholder image
-    description: 'Discuss the broader impact of physical AI and humanoid robotics on society, including ethical considerations and future trends.',
-    link: '/docs/modules/module4', // Assuming this path exists
-  },
-];
-
-function ModuleCard({ title, imageUrl, description, link }) {
-  return (
-    <div className={clsx('col col--3', styles.moduleCard)}>
-      <div className="card shadow--md">
-        <div className="card__image">
-          <img src={imageUrl} alt={title} className={styles.cardImage} />
-        </div>
-        <div className="card__body">
-          <h4>{title}</h4>
-          <p>{description}</p>
-        </div>
-        <div className="card__footer">
-          <Link
-            className="button button--primary button--block"
-            to={link}>
-            Learn More
-          </Link>
-        </div>
-      </div>
-    </div>
   );
 }
 
@@ -99,16 +48,8 @@ export default function Home(): JSX.Element {
           </div>
         </section>
 
-        <section className={clsx('padding-vert--xl', styles.modules)}>
-          <div className="container">
-            <h2 className="text--center margin-bottom--lg">Modules</h2>
-            <div className="row">
-              {modules.map((props, idx) => (
-                <ModuleCard key={idx} {...props} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <BookCards />
+        <Footer />
       </main>
     </Layout>
   );

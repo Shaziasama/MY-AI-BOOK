@@ -24,27 +24,27 @@ const ModuleCard = ({title, description, imageUrl, link}) => {
 const MODULES = [
   {
     title: 'Module 1: Foundations of Embodied AI',
-    description: 'Explore the core concepts of AI in physical systems, focusing on perception, cognition, and action.',
-    imageUrl: '/img/module1-placeholder.png',
-    link: '/docs/intro', // Link to introduction for now
+    description: 'This module introduces the fundamental concepts of embodied artificial intelligence. We will explore how AI systems can interact with the physical world, the role of sensors and actuators, and the challenges of perception and action in real-world environments.',
+    imageUrl: '/img/module1.jpg',
+    link: '/docs/modules/module1',
   },
   {
-    title: 'Module 2: Robotic Perception and Sensing',
-    description: 'Dive into advanced sensor fusion, computer vision, and tactile sensing for humanoid robots.',
-    imageUrl: '/img/module2-placeholder.png',
-    link: '/docs/digital-twin/01-gazebo-simulation', // Example link
+    title: 'Module 2: Humanoid Robotics Kinematics & Dynamics',
+    description: 'This module delves into the mathematical principles governing the motion of humanoid robots. We will cover forward and inverse kinematics, which are essential for understanding how a robot\'s joints move its end-effectors, and dynamics, which deals with the forces and torques involved in motion.',
+    imageUrl: '/img/module2.jpg',
+    link: '/docs/modules/module2',
   },
   {
-    title: 'Module 3: Motion Planning and Control',
-    description: 'Understand the algorithms and strategies for complex motion planning and dexterous manipulation.',
-    imageUrl: '/img/module3-placeholder.png',
-    link: '/docs/isaac/01-isaac-sim-overview', // Example link
+    title: 'Module 3: Perception and Sensing for Humanoids',
+    description: 'This module focuses on how humanoid robots perceive their environment. We will explore various sensing modalities, from vision and depth sensing to touch and proprioception, and how these data are processed to build a coherent understanding of the surrounding world.',
+    imageUrl: '/img/module3.jpg',
+    link: '/docs/modules/module3',
   },
   {
-    title: 'Module 4: Human-Robot Interaction and Learning',
-    description: 'Examine safe and intuitive human-robot collaboration, learning from demonstration, and reinforcement learning.',
-    imageUrl: '/img/module4-placeholder.png',
-    link: '/docs/ros2/01-ros2-introduction', // Example link
+    title: 'Module 4: Control and Navigation in Complex Environments',
+    description: 'In this module, we will examine the advanced control strategies and navigation techniques that enable humanoid robots to operate effectively in dynamic and complex environments. Topics include balance control, gait generation, motion planning, and human-robot interaction.',
+    imageUrl: '/img/module4.jpg',
+    link: '/docs/modules/module4',
   },
 ];
 
